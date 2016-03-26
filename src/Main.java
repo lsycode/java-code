@@ -1,6 +1,11 @@
-public class Main {
+import javax.servlet.Servlet;
+import javax.servlet.ServletRequest;
+import javax.servlet.ServletResponse;
+import java.math.BigInteger;
 
-    public static void main(String[] args) {
-        System.out.println("Hello World!  d f");
+@ThreadSafe
+public class  StatelessFactorizer implements Servlet{
+    public void service(ServletRequest req,ServletResponse resp){
+        BigInteger i = extractFrom
     }
 }
