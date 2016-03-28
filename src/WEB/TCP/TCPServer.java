@@ -1,7 +1,7 @@
 /**
  * Reference:Computer Networking A Top-Down Approach 计算机网络：自顶向下方法
  */
-package TCP;
+package WEB.TCP;
 
 import java.io.BufferedReader;
 import java.io.DataOutputStream;
