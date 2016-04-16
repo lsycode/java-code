@@ -10,11 +10,11 @@ public class SurroundedRegions130 {
             System.out.println("[]");
             return;
         }
-        int length2 = board.length;
-        int length1 = board[0].length;
+        int length1 = board.length;
+        int length2 = board[0].length;
         char o = 'o';
-        char[][] result = new char[length1][length1];
-        for (int i = 0; i < length1; i++) {
+        char[][] result = new char[length1][length2];
+        for (int i = 0; i < length2; i++) {
             if (o == board[0][i]) {
                 result[0][i] = o;
             }
@@ -22,12 +22,12 @@ public class SurroundedRegions130 {
                 result[length1 - 1][i] = o;
             }
         }
-        for (int i = 0; i < length2; i++) {
+        for (int i = 0; i < length1; i++) {
             if (o == board[i][0]) {
                 result[i][0] = o;
             }
-            if (o == board[i][length1 - 1]) {
-                result[i][length1 - 1] = o;
+            if (o == board[i][length2 - 1]) {
+                result[i][length2 - 1] = o;
             }
         }
 
@@ -38,7 +38,7 @@ public class SurroundedRegions130 {
             len++;
         }
         while (p < len) {
-            for (int i = p; i < length1 - p; i++) {
+            for (int i = p; i < length2 - p; i++) {
                 if (o == board[p - 1][i] && o == board[p][i]) {
                     result[p][i] = o;
                 }
@@ -47,7 +47,7 @@ public class SurroundedRegions130 {
                 }
             }
 
-            for (int i = p; i < length2 - p; i++) {
+            for (int i = p; i < length1 - p; i++) {
                 if (o == board[i][p - 1] && o == board[i][p]) {
                     result[i][p] = o;
                 }
@@ -96,7 +96,7 @@ public class SurroundedRegions130 {
 //        char[][] board2 = null;
 //        solve(board2);
 
-        String[] s1 = {"XOXOXO", "OXOXOX", "XOXOXO", "OXOXOX"};
+        String[] s1 = {"xoxoxo", "oxoxox", "xoxoxo", "oxoxox"};
         char[][] ch = toChar(s1);
         solve(ch);
     }
