@@ -1,4 +1,4 @@
-package chapiter4;
+package algo4.chapiter4;
 
 import edu.princeton.cs.algs4.Alphabet;
 

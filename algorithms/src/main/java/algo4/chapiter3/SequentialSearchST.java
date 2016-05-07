@@ -1,4 +1,4 @@
-package chapiter3;
+package algo4.chapiter3;
 
 import java.util.ArrayList;
 import java.util.List;

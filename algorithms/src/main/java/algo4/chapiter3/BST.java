@@ -1,8 +1,7 @@
-package chapiter3;
+package algo4.chapiter3;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Queue;
 
 /**
  * Created by lsy on 2016/4/13.

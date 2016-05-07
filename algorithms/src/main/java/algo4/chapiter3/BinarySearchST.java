@@ -1,4 +1,4 @@
-package chapiter3;
+package algo4.chapiter3;
 
 /**
  * Created by lsy on 2016/4/13.

@@ -1,8 +1,6 @@
-package chapiter3;
+package algo4.chapiter3;
 
-import common.Common;
 import edu.princeton.cs.algs4.ST;
-import edu.princeton.cs.algs4.StdIn;
 import edu.princeton.cs.algs4.StdOut;
 import utils.In;
 
